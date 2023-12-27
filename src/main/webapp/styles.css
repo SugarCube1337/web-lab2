@@ -1,0 +1,133 @@
+/* Reset some default styles */
+body, h1, h2, h3, p, ul, ol, li, figure, figcaption, blockquote, dl, dd {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; /* Disable horizontal scrolling */
+}
+
+.header {
+    background-color: #dcdcdc;
+    text-align: center;
+    padding: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.header h1 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.info p {
+    font-style: italic;
+    font-size: 1rem;
+    color: #666;
+}
+
+.card {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.user-form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.user-form label,
+.user-form input,
+.user-form select,
+.user-form button {
+    margin-bottom: 15px;
+    color: #333;
+    font-size: 1rem;
+}
+
+.user-form input[type="number"]:focus,
+.user-form select:focus {
+    border-color: #6C6;
+    box-shadow: 0 0 8px rgba(102, 204, 102, 0.5);
+}
+
+.user-form:hover {
+    background-color: #f5f5f5;
+    transition: background-color 0.3s ease;
+}
+
+.footer {
+    background-color: #dcdcdc;
+    text-align: center;
+    padding: 8px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    font-size: 0.8rem;
+    transition: transform 0.3s ease;
+}
+
+.footer:hover {
+    transform: translateY(-10px);
+}
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    overflow-x: auto; /* Enable horizontal scrolling */
+}
+
+.table th, .table td {
+    padding: 15px;
+    border: 1px solid #ccc;
+    text-align: center;
+}
+
+.table th {
+    background-color: #dcdcdc;
+    font-size: 1rem;
+    color: #333;
+}
+
+.table tbody tr:hover {
+    background-color: #f2f2f2;
+    transition: background-color 0.3s ease;
+}
+
+.error-message,
+.success-message {
+    font-size: 0.9rem;
+    margin-top: 8px;
+    text-align: center;
+    padding: 10px;
+    border: 2px solid;
+    border-radius: 8px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.error-message {
+    color: #F66;
+    background-color: #FEE8E8;
+}
+
+.success-message {
+    color: #6C6;
+    background-color: #EAF5EA;
+}
+
+/* Add any additional styles as needed */
